@@ -1,0 +1,55 @@
+@import 'src/Assets/styles/mixins.scss';
+
+.select {
+	&__control {
+		@include input-decoration;
+	}
+
+	&__no-option-message,
+	&__option {
+		padding: 10px;
+
+		border-radius: 5px;
+
+		&:hover {
+			background-color: var(--color-gray-2);
+		}
+	}
+
+	&__menu {
+		margin-top: 5px;
+		padding: 10px;
+
+		border-radius: 15px;
+		background-color: #ffffff;
+		box-shadow: 0 0 5px rgba(56, 57, 80, 0.25);
+	}
+
+	&__multi-value {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		font-size: 12px;
+
+		background-color: #e2e5ed;
+		padding: 6px 10px;
+
+		border-radius: 20px;
+	}
+
+	&__value-container {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__separator {
+		height: 100%;
+		width: 2px;
+
+		margin: 0 8px;
+
+		background-color: #888888;
+	}
+}
